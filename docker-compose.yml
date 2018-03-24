@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sbt:
+    image: "amaya382/sbt:1.1.1-jdk8"
+    ports: 
+      - "9000:9000"
+    volumes:
+      - .:/app
+    command: ["sbt","run"]
